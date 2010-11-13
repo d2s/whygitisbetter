@@ -364,18 +364,19 @@
 						</div>
 
 						<div class="text">
-							It should be noted that although the 'add' numbers are much slower,
-              this was for a massive add operation&mdash;over 2000 files.  For the
-              majority of what most people do on a daily basis, add ops in any
-              of these systems will only take a fraction of a second. All of the
-              other ops tested here (except for the large commit, possibly) are
-              more indicative of things you might actually do day to day.
+							Täytyy huomata että vaikka 'add' numerot ovat paljon hitaampia,
+							tämä oli massiivinen lisäysoperaatio&mdash;yli 2000 tiedostoa.
+							Suurimmalle osalle siitä mitä ihmiset tekevät päivittäisesti, lisäysoperaatiot
+							missa tahansa näistä järjestelmistä ottavat ainoastaan sekunnin murto-osan.
+							Kaikki muut testatut operaatiot täällä (lukuunottamatta suurta muutosten
+							toteutusta, todennäköisesti) ovat enemmän ilmaisevia asioista
+							joita saatat käytännössä tehdä päivästä päivään.
 						</div>
 					
 					
 					<div class="text">
-						These numbers are really not difficult to recreate, simply clone the Django
-						project in each of the systems and try out the same commands in each.
+						Nämä numerot eivät ole vaikeita toistaa, yksinkertaisesti kloonaa Django
+						projekti jokaisella järjestelmistä ja kokeile samoja komentoja jokaisessa.
 						<ul>
 							<li><code>git clone git://github.com/brosner/django.git dj-git</code></li>
 							<li><code>hg clone http://hg.dpaste.com/django/trunk dj-hg</code></li>
@@ -395,20 +396,19 @@
 					</div>
 			
 	        <h2>
-          <a name="git-is-small" href="#git-is-small">Git is Small</a>
+          <a name="git-is-small" href="#git-is-small">Git on pieni</a>
 	        </h2>
 	
 					<div class="contents">
 						<div class="text">
-							Git is really good at conserving disk space.  Your Git directory will 
-							(in general) barely be larger than an SVN checkout&mdash;in some cases
-							actually smaller (apparently a lot can go in those .svn dirs).
+							Git on todella hyvä levytilan säästämisessä. Git hakemistosi on
+							(normaalisti) hieman suurempi kuin SVN checkout&mdash;joissakin tapauksissa
+							jopa pienempi (ilmeisesti paljon asioita voi mennä noihin .svn hakemistoihin).
 						</div>
 					
 						<div class="text">
-							The following numbers were taken from clones of the Django project
-							in each of its semi-official Git mirrors at the same point in 
-							its history.
+							Seuraavat numerot on otettu Django -projektin klooneista jokaisesta sen
+							puoli-virallisesta Git peilistä samaan aikaan sen historiassa.
 						</div>
 					
 						<table>
@@ -420,14 +420,14 @@
 								<th>SVN</th>
 							</tr>
 							<tr>
-								<td>Repo Alone</td>
+								<td>Varasto yksin</td>
 								<td class="sweet">24M</td>
 								<td>34M</td>
 								<td>45M</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td>Entire Directory</td>
+								<td>Koko hakemisto</td>
 								<td class="compare">43M</td>
 								<td>53M</td>
 								<td>64M</td>
