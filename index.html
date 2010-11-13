@@ -122,16 +122,17 @@
 									muutaman kerran, vaihtaa takaisin mistä haarautit, toteuttaa korjauksen, 
 									palata takaisin siihen missä olet kokeilemassa ja liittää sen sisään.
 								</li>
-								<li>Have a branch that always contains only what goes to production,
-									another that you merge work into for testing and several smaller
-									ones for day to day work
+								<li>
+									Pidä haara joka aina sisältää ainoastaan sen mitä menee tuotantoon,
+									toinen johon yhdistät työn testausta varten ja useampia pienempiä
+									päivästä päivään tehtävää työtä varten.
 								</li>
 								<li>Luoda uudet haarat jokaiselle uudelle ominaisuudelle jota olet työstämässsä,
 									joten voit katkotta vaihtaa edestakaisin niiden välillä, sitten poistaa
 									kunkin haaran sen jälkeen kun kyseinen ominaisuus saadaan liitettyä päälinjaan.
 								</li>
-								<li>Luoda uuden haaran kokeillaksesi asioita, todeta että se ei tule toimimaan
-									ja vain tuhota se, hyläten työn&mdash;ilman että kukaan muu koskaan näkee sitä
+								<li>Luoda uuden haaran kokeillaksesi asioita, todetaksesi että ne eivät tule toimimaan
+									ja vain tuhotaksesi sen, hyläten työn&mdash;ilman että kukaan muu koskaan näkee sitä
 									(vaikka olisit sillävälin julkaissut muut kehityshaarat).
 								</li>
 							</ul>
@@ -140,11 +141,11 @@
 						<img src="images/branches.png" alt="branches flowchart"/>
 						
 						<div class="text">
-							Importantly, when you push to a remote repository, you do <em>not</em>
-							have to push all of your branches.  You can only share one of your
-							branches and not all of them.  This tends to free people to try
-							new ideas without worrying about having to plan how and when they
-							are going to merge it in or share it with others.
+							Tärkeä on huomata että kun siirrät (push) muutokset etäsäilöön, sinun <em>ei</em>
+							tarvitse siirtää kaikkia kehityshaarojasi. Voit jakaa ainoastaan yhden haaran
+							eikä kaikkia niitä.	Tämä tuntuu vapauttavan ihmisiä kokeilemaan uusi ideoita
+							ilman huolehtimista siitä että täytyy suunnitella kuinka ja milloin he aikovat
+							yhdistää (merge) sen sisään tai jakaa sen muiden kanssa.
 						</div>
 						
 						<div class="text">
@@ -152,6 +153,12 @@
 							involved is much more difficult and error-prone.  Git makes this
 							process incredibly easy and it changes the way most developers
 							work when they learn it.
+						</div>
+						<div class="text">
+							Sinä <em>voit</em> löytää keinoja tehdä tämän saman muilla järjestelmillä, mutta siihen
+							liittyvä työmäärä on paljon hankalampi ja virhealttiimpi. Git tekee tämän prosessin
+							ihmeellisen helpoksi ja se muuttaa tavan miten useimmat kehittäjät tekevät töitä
+							kun he oppivat sen.
 						</div>
 						
 						<!-- TODO : (short screencast showing the awesomeness of git branches) -->
@@ -173,24 +180,25 @@
 						<span class="lang perforce">perforce</span>
 					</div>
 	        <h2>
-          <a name="everything-is-local" href="#everything-is-local">Everything is Local</a>
+          <a name="everything-is-local" href="#everything-is-local">Kaikki on paikallista</a>
 	        </h2>
 					<div class="contents">	
 
 						<div class="text">
-							This is basically true of all the distributed SCMs, but in my
-							experience even more so with Git.  There is very little outside
-							of 'fetch', 'pull' and 'push' that communicates in any way with 
-							anything other than your hard disk.
+							Tämä on periaateessa totta kaikissa hajautetuissa lähdekoodin
+							hallintajärjestelmissä (SCM), mutta minun kokemukseni mukaan
+							vielä enemmän Gitin kanssa. Siinä on hyvin vähän asioita 'fetch', 'pull'
+							ja 'push' komentojen ulkopuolella jotka viestisivät minkään muun
+							kuin kiintolevysi kanssa.
 						</div>
-
+						
 						<div class="text">
 							This not only makes most operations much faster than you may
-              be used to, but it also allows you to work on stuff offline.
-              That may not sound like a big deal, but I'm always amazed at
-              how often I actually do work offline.  Being able to branch,
-              merge, commit and browse history of your project while on 
-              the plane or train is very productive.
+							be used to, but it also allows you to work on stuff offline.
+							That may not sound like a big deal, but I'm always amazed at
+							how often I actually do work offline.  Being able to branch,
+							merge, commit and browse history of your project while on 
+							the plane or train is very productive.
 						</div>
 						
 						<div class="center"><img style="width: 500px" src="images/local-remote.png" alt="local repo to remote repo flowchart" /></div>
