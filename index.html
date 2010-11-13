@@ -141,7 +141,7 @@
 						<img src="images/branches.png" alt="branches flowchart"/>
 						
 						<div class="text">
-							Tärkeä on huomata että kun siirrät (push) muutokset etäsäilöön, sinun <em>ei</em>
+							Tärkeä on huomata että kun siirrät (push) muutokset etävarastoon, sinun <em>ei</em>
 							tarvitse siirtää kaikkia kehityshaarojasi. Voit jakaa ainoastaan yhden haaran
 							eikä kaikkia niitä.	Tämä tuntuu vapauttavan ihmisiä kokeilemaan uusi ideoita
 							ilman huolehtimista siitä että täytyy suunnitella kuinka ja milloin he aikovat
@@ -242,20 +242,20 @@
 						</div>
 					
 						<div class="text">
-							Part of this is likely because it was built to work on the Linux 
-							kernel, which means that it has had to deal effectively with large
-							repositories from day one.  Additionally, Git is written in C, reducing the
-							overhead of runtimes associated with higher-level languages.
-							Another reason that Git is so fast is that the primary developers
-							have made this a design goal of the application.
+							Osa tästä on todennäköisesti siksi että se rakennettiin Linux kernelin työstämiseen,
+							mikä tarkoittaa että sen täytyi pystyä käsittelemään tehokkaasti isoja varastoja
+							ensimmäisestä päivästä alkaen. Lisäksi, Git on kirjoitettu C -kielellä,	mikä vähentää
+							runtime kirjastojen yleisrasitetta joka liittyy korkeamman tason kieliin.
+							Toinen syy siihen miksi Git on niin nopea on se että pääkehittäjät ovat
+							tehneet siitä suunnittelutavoitteen sovellukselle.
 						</div>
 
 						<div class="text">
-							The following are a number of benchmarks that I performed on three
-							copies of the Django source code repository in 3 different SCMs:
-							Git, Mercurial and Bazaar.  I also tested some of this stuff in SVN,
-							but trust me, it's slower&mdash;basically take the Bazaar numbers and
-							then add network latency...
+							Seuraavat ovat useita suorituskykytestejä joita olen suorittanut kolmella kopiolla
+							Django -projektin lähdekoodivarastosta kolmella eri hallintajärjestelmällä:
+							Git, Mercurial ja Bazaar. Olen myös testannut jotain näistä asioista SVN:llä,
+							mutta luota minuun, se on hitaampi&mdash;periaatteessa ota Bazaarin numerot
+							ja lisää siihen verkkoviive...
 						</div>
 
             <table>  
@@ -282,10 +282,10 @@
 						</table>
 						
 						<div class="text">
-							The end result was that for everything but adding new files, Git
-							was fastest. (Also really large commits, which Hg was basically the
-							same at, but the commit I tested was so large that you're unlikely
-							to ever do anything like it&mdash;normal commits are much faster in Git.)
+							Lopputulos oli se että kaikkeen paitsi uusien tiedostojen lisäämiseen, Git oli nopein.
+							(Myös erittäin isot muutosten toteutukset, missä Hg oli periaatteessa sama, mutta
+							muutos jota testasin oli niin suuri että on epätodennäköistä että teet koskaan
+							jotain sen tapaista&mdash;normaalit muutokset ovat paljon nopeampia Gitissä.)
 						</div>
 						
 						<table>
